@@ -1,0 +1,22 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    ".git",
+		"node_modules/**/node_modules",
+		"./build/"
+  ],
+  "verbose": true,
+  "execMap": {
+    "js": "node --harmony node_modules/.bin/webpack --watch false --config ./webpack/dev.js"
+  },
+  "events": {
+    "restart": "echo 'restart'"
+  },
+  "watch": [
+    "./source/"
+  ],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "ext": "js json css"
+}

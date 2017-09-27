@@ -1,0 +1,72 @@
+:root {
+	--midnight: #273338;
+}
+
+#editor, html, body {
+	background: #1E1E1E;
+	// background: var(--midnight);
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+#editor {
+
+}
+
+body {
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+	max-width: 100vw;
+	height: 100vh;
+	max-height: 100vh;
+}
+
+#navbar {
+	color: white;
+	height: 100vh;
+	width: 280px;
+	max-width: 280px;
+	background: rgb(37, 37, 38);
+	box-shadow: -3px 0 8px #000000;
+	z-index: 20;
+	transition: all 0.34s;
+}
+
+#navbar * {
+	opacity: 1;
+	transition: all 0.34s;
+}
+
+// #navbar.skinny {
+// 	width: 48px;
+// }
+
+// #navbar.skinny *:not(.expander) {
+// 	opacity: 0;
+// }
+
+#editor {
+	height: 100%;
+	flex: 1;
+	overflow-y: hidden;
+	padding-top: 12px;
+}
+
+#editor.fat {
+
+}
+
+
+
+:global(.CodeFlask__pre.language-javascript),
+:global(.CodeFlask__code.language-javascript),
+:global(textarea.CodeFlask__textarea) {
+	tab-size: 4 !important;
+}
+
+
+
+
+

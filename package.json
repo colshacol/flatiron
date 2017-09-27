@@ -1,0 +1,79 @@
+{
+	"name": "mirage",
+	"version": "0.0.0",
+	"main": "source/index.js",
+	"description": "A cutting-edge React boiplerplate.",
+	"scripts": {
+		"test": "ava",
+		"start": "node -r babel-register ./node_modules/.bin/webpack-dev-server --config ./webpack/dev.mjs",
+		"build": "node -r babel-register ./node_modules/.bin/webpack --watch --config ./webpack/dev.mjs & http-server ./build"
+	},
+	"dependencies": {
+		"babel-polyfill": "^7.0.0-beta.1",
+		"brace": "^0.10.0",
+		"codeflask": "^0.2.0",
+		"flat": "^4.0.0",
+		"js-beautify": "^1.7.3",
+		"mirrorx": "^0.2.7",
+		"monaco-editor": "^0.10.0",
+		"prettier": "^1.6.0",
+		"prismjs": "^1.8.1",
+		"react": "^16.0.0-rc.3",
+		"react-ace": "^5.2.1",
+		"react-codemirror": "^1.0.0",
+		"react-dom": "^16.0.0-rc.3",
+		"regenerator-runtime": "^0.11.0",
+		"twitch.tv-api": "^1.2.4",
+		"urijs": "^1.18.12"
+	},
+	"devDependencies": {
+		"autoprefixer": "^7.1.4",
+		"ava": "^0.22.0",
+		"babel-core": "^7.0.0-beta.1",
+		"babel-loader": "^7.1.2",
+		"babel-plugin-flow-runtime": "^0.11.1",
+		"babel-plugin-react-css-modules": "^3.3.0",
+		"babel-plugin-react-html-attrs": "^2.0.0",
+		"babel-plugin-sitrep": "^1.2.3",
+		"babel-plugin-transform-class-properties": "^7.0.0-beta.1",
+		"babel-plugin-transform-decorators-legacy": "^1.3.4",
+		"babel-plugin-transform-inline-environment-variables": "^0.2.0",
+		"babel-plugin-transform-optional-chaining": "^7.0.0-beta.1",
+		"babel-plugin-transform-react-display-name": "^7.0.0-beta.1",
+		"babel-preset-env": "^2.0.0-beta.1",
+		"babel-preset-es2015": "^7.0.0-beta.1",
+		"babel-preset-es2016": "^7.0.0-beta.1",
+		"babel-preset-es2017": "^7.0.0-beta.1",
+		"babel-preset-flow": "^7.0.0-beta.1",
+		"babel-preset-react": "^7.0.0-beta.1",
+		"babel-preset-stage-0": "^7.0.0-beta.1",
+		"babel-register": "^7.0.0-beta.1",
+		"clean-webpack-plugin": "^0.1.16",
+		"css-loader": "^0.28.7",
+		"enzyme": "^2.9.1",
+		"extract-text-webpack-plugin": "^3.0.0",
+		"flow-runtime": "^0.14.0",
+		"json-loader": "^0.5.7",
+		"jsx-control-statements": "^3.2.6",
+		"postcss": "^6.0.12",
+		"postcss-loader": "^2.0.6",
+		"style-loader": "^0.18.2",
+		"webpack": "^3.6.0",
+		"webpack-dev-server": "^2.8.2"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/colshacol/mirage.git"
+	},
+	"keywords": [
+		"react",
+		"webpack",
+		"redux"
+	],
+	"bugs": {
+		"url": "https://github.com/colshacol/mirage/issues"
+	},
+	"homepage": "https://github.com/colshacol/mirage#readme",
+	"author": "Colton Colcleasure <colshacol@gmail.com>",
+	"license": "ISC"
+}
