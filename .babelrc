@@ -1,7 +1,5 @@
 {
 	"plugins": [
-		"transform-decorators-legacy",
-		"transform-class-properties",
 		"module:jsx-control-statements",
 		"transform-inline-environment-variables",
 		"react-html-attrs",
@@ -24,7 +22,9 @@
 				"context": "../source",
 				"generateScopedName": "[local]"
 			}
-		]
+		],
+		"transform-class-properties",
+		"transform-decorators-legacy"
 	],
 
 	"presets": [

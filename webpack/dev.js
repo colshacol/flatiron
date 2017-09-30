@@ -3,6 +3,8 @@ const loaders = require('./loaders')
 const plugins = require('./plugins')
 const webpack = require('webpack')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 
 module.exports = {
 	cache: false,
@@ -46,7 +48,13 @@ module.exports = {
 		], {
 			verbose: true,
 			root: resolve(__dirname, '../build')
-		})
+		}),
+		new CopyWebpackPlugin([
+      {
+        from: '../node_modules/monaco-editor/min/vs',
+        to: 'vs',
+      }
+    ])
 	],
 
 	// devServer: {

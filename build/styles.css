@@ -14,7 +14,7 @@
 
 }
 
-body {
+mount, body {
 	display: flex;
 	flex-direction: row;
 	width: 100vw;
@@ -37,14 +37,6 @@ body {
 #navbar * {
 	opacity: 1;
 	transition: all 0.34s;
-}
-
-#navbar.skinny {
-	width: 48px;
-}
-
-#navbar.skinny *:not(.expander) {
-	opacity: 0;
 }
 
 #editor {

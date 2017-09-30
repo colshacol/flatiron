@@ -5,8 +5,8 @@
 	"description": "A cutting-edge React boiplerplate.",
 	"scripts": {
 		"test": "ava",
-		"start": "node -r babel-register ./node_modules/.bin/webpack-dev-server --config ./webpack/dev.mjs",
-		"build": "node -r babel-register ./node_modules/.bin/webpack --watch --config ./webpack/dev.mjs & http-server ./build"
+		"start": "node -r babel-register ./node_modules/.bin/webpack-dev-server --config ./webpack/dev.js",
+		"build": "node -r babel-register ./node_modules/.bin/webpack --watch --config ./webpack/dev.js & http-server ./build"
 	},
 	"dependencies": {
 		"babel-polyfill": "^7.0.0-beta.1",
@@ -15,13 +15,17 @@
 		"flat": "^4.0.0",
 		"js-beautify": "^1.7.3",
 		"mirrorx": "^0.2.7",
+		"mobx": "^3.3.0",
+		"mobx-react": "^4.3.3",
 		"monaco-editor": "^0.10.0",
 		"prettier": "^1.6.0",
-		"prismjs": "^1.8.1",
+		"prisjs": "^1.8.1",
 		"react": "^16.0.0-rc.3",
 		"react-ace": "^5.2.1",
+		"react-aux": "^1.0.1",
 		"react-codemirror": "^1.0.0",
 		"react-dom": "^16.0.0-rc.3",
+		"react-monaco-editor": "^0.10.1",
 		"regenerator-runtime": "^0.11.0",
 		"twitch.tv-api": "^1.2.4",
 		"urijs": "^1.18.12"
@@ -49,6 +53,7 @@
 		"babel-preset-stage-0": "^7.0.0-beta.1",
 		"babel-register": "^7.0.0-beta.1",
 		"clean-webpack-plugin": "^0.1.16",
+		"copy-webpack-plugin": "^4.0.1",
 		"css-loader": "^0.28.7",
 		"enzyme": "^2.9.1",
 		"extract-text-webpack-plugin": "^3.0.0",
