@@ -30,9 +30,10 @@ module.exports = {
     alias: {
       '@comps': resolve(__dirname, '../source/comps'),
 			'@styles': resolve(__dirname, '../source/styles'),
-			'@utilities': resolve(__dirname, '../source/utilities'),
+			'@utils': resolve(__dirname, '../source/utils'),
 			'@packages': resolve(__dirname, '../source/packages'),
 			'@scenes': resolve(__dirname, '../source/scenes'),
+			'@stores': resolve(__dirname, '../source/stores')
     }
 	},
 
