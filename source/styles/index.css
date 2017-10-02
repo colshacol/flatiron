@@ -45,6 +45,11 @@ button, button:focus, button:active  {
 	padding-top: 12px;
 }
 
+a:-webkit-any-link {
+	color: $color-10;
+	text-decoration: none;
+}
+
 
 
 

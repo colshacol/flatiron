@@ -2,7 +2,7 @@ import React from 'react'
 import { observable, action } from 'mobx'
 import { observer, inject } from 'mobx-react'
 
-import './Navbar.css'
+import './styles/Navbar.css'
 
 const Navbar = (props) => {
 	const { EditorStore } = props
@@ -11,6 +11,7 @@ const Navbar = (props) => {
 			<div styleName='logo-box'>
 				<p styleName='logo'>flatiron</p>
 				<p styleName='slogan'>JSON FORMATTER/FLATTENER</p>
+				<a href='https://git.io/vdnh5' styleName='git-link'>@github</a>
 			</div>
 			<div styleName='button-box'>
 				<button onClick={props.EditorStore.flattenValue}>flatten</button>
