@@ -19,8 +19,8 @@
 		[
 			"react-css-modules",
 			{
-				"context": "../source",
-				"generateScopedName": "[local]"
+				"context": "./source/",
+				"generateScopedName": "[local]_[name]"
 			}
 		],
 		"transform-decorators",

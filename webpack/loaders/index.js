@@ -1,5 +1,7 @@
+const path = require('path')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
+console.log(__dirname)
 module.exports = [
 	{
 		test: /\.js$/,
@@ -9,7 +11,7 @@ module.exports = [
 		]
 	},
 	{
-		test: /\.css$/,
+		test: /\.(css|styl)$/,
 		exclude: /node_modules/,
 		use: ExtractTextPlugin.extract({
 			fallback: "style-loader",
@@ -19,15 +21,19 @@ module.exports = [
 					options: {
 						modules: true,
 						importLoaders: 1,
-						localIdentName: "[local]"
+						localIdentName: "[local]_[name]"
 					}
 				},
 				{
-					loader: "postcss-loader",
-					options: {
-						sourcemap: false
-					}
+					loader: 'postcss-loader',
+					options: {}
 				},
+				{
+					loader: 'stylus-loader',
+					options: {
+						include: [path.resolve(__dirname, '../../styles/utils')]
+					}
+				}
 			]
 		})
 	},

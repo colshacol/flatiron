@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i);.Navbar_Navbar {
+  color: #fff;
+  height: 100vh;
+  width: 280px;
+  max-width: 280px;
+  background: #252526;
+  box-shadow: -3px 0 8px #000;
+  z-index: 20;
+  transition: all 0.34s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.Navbar_Navbar * {
+  opacity: 1;
+  transition: all 0.34s;
+}
+.logo-box_Navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo_Navbar {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+.slogan_Navbar {
+  font-size: 12px;
+  font-weight: 300;
+  font-style: italic;
+  margin-top: 6px;
+  opacity: 0.5;
+}
+.button-box_Navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 24px;
+}
+div,
+section,
+main,
+header,
+footer,
+nav {
+  box-sizing: border-box;
+}
+mount,
+.editor_index,
+html,
+body {
+  letter-spacing: 1px;
+  font-family: 'Rubik', sans-serif;
+  background: #1e1e1e;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+button,
+button:focus,
+button:active {
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: #3e51f2;
+  color: #fff;
+  box-shadow: 2px 3px 12px rgba(0,0,0,0.35);
+  cursor: pointer;
+}
+mount,
+body {
+  background: #1e1e1e;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+}
+.editor_index {
+  height: 100%;
+  flex: 1;
+  overflow-y: hidden;
+  padding-top: 12px;
+}
+
+/*# sourceMappingURL=styles.css.map*/

@@ -1,20 +1,35 @@
-:root {
-	--midnight: #273338;
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i');
+@require './utils'
+
+div, section, main, header, footer, nav {
+	box-sizing: border-box;
 }
 
-#editor, html, body {
-	background: #1E1E1E;
-	// background: var(--midnight);
+:global(mount), .editor, html, body {
+	letter-spacing: 1px;
+	font-family: $main-font;
+	background: $color-0;
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
 }
 
-#editor {
-
+button, button:focus, button:active  {
+	outline: none;
+	border: none;
+	border-radius: 4px;
+	padding: 12px 24px;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	background: $color-10;
+	color: white;
+	box-shadow: 2px 3px 12px rgba(0,0,0,0.35);
+	cursor: pointer;
 }
 
-mount, body {
+:global(mount), body {
+	background: $color-0;
 	display: flex;
 	flex-direction: row;
 	width: 100vw;
@@ -23,25 +38,12 @@ mount, body {
 	max-height: 100vh;
 }
 
-#editor {
+.editor {
 	height: 100%;
 	flex: 1;
 	overflow-y: hidden;
 	padding-top: 12px;
 }
-
-#editor.fat {
-
-}
-
-
-
-:global(.CodeFlask__pre.language-javascript),
-:global(.CodeFlask__code.language-javascript),
-:global(textarea.CodeFlask__textarea) {
-	tab-size: 4 !important;
-}
-
 
 
 

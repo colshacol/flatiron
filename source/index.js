@@ -10,8 +10,8 @@ import './styles/index.css'
 const App = inject('EditorStore')(observer((props) => {
 	const { EditorStore } = props
 	return [
-			<Navbar/>,
-			<div id='editor'>
+			<Navbar key='navbar'/>,
+			<div styleName='editor' key='editor'>
 				<MonacoEditor
 					theme='vs-dark'
 					value={EditorStore.value}

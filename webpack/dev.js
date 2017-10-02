@@ -26,7 +26,7 @@ module.exports = {
 
 	resolve: {
     modules: [resolve(__dirname, '../node_modules')],
-    extensions: ['.js', '.json', '.jsx', '.css'],
+    extensions: ['.js', '.json', '.jsx', '.css', '.styl'],
     alias: {
       '@comps': resolve(__dirname, '../source/comps'),
 			'@styles': resolve(__dirname, '../source/styles'),
@@ -44,6 +44,7 @@ module.exports = {
 			'*.hot-update.js',
 			'*.hot-update.js.map',
 			'*.hot-update.json',
+			'styles.*',
 			'css/',
 			'js/'
 		], {
